@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+        <head>
+        <link rel="stylesheet" href="proMT2.html">
+        <link rel="stylesheet" href="header_style.css">
+
+        <style>
+            body {
+            direction: rtl;
+            position: static;
+            background-image: url("pictcher/v47.jpg") ;
+            overflow: scroll;
+            width:auto ;
+            max-width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            }
+            img{
+                border-style:groove;
+                border-radius: 20%;
+                border:#0a759c;
+                border-width: 10px;
+                width: 200px;
+                height: 200px;
+                box-shadow: #3b0d0d;
+                border-color: rgb(175, 74, 99);
+                border-width: 10px;
+                border-style: groove;
+
+            }
+            ul{
+                display: flex;
+                text-align: center;
+                font-size: 30px;
+            }
+            li{
+            list-style: none;
+                    }
+            .logo {
+            display:inline-block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0px;
+            box-shadow: #fdfdfd;
+            border-color: rgb(69, 69, 70);
+            border-width: 10px;
+            border-style: groove;
+            transition-timing-function: linear;
+            transition-duration: 0.4s;
+            height: 60px;
+            width: 60px;
+
+            }
+            .logo:hover {
+            width: 200px;
+            height: 200px;
+            }
+            header {
+            position: relative;
+            font-size: 30px;
+            color:rgb(89, 27, 80);
+            font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            h1{
+            text-align: center;
+        
+            }
+            #headline{
+            margin-right: 520px;
+
+            }
+            #headlineMind{
+            margin-right: 520px;
+
+            }
+            #games{
+                display: flex;
+                margin-right: 270px;
+            }
+            a{
+                font-family: 'Gill Sans';
+                font-size: 15px;
+                text-align: center;
+                color:rgb(53, 56, 7);
+            }
+            #head1{
+                font-family:'Franklin Gothic Medium';
+                font-size: 50;
+                color:blueviolet;
+                text-align: center;
+
+            }
+             
+        </style>
+
+        <title>games</title>
+    </head>
+
+
+    <body>
+        <header>
+            <p id="user"></p>
+                      
+            <nav id="navigation_login">
+                <a id="logOut" onclick="logOut()" href="proMT2.html" class="hide">התנתק</a>
+            </nav>
+        
+            <nav id="navigation">
+                <a href="mind.html" class="button">משחקי חשיבה</a>
+                <a href=# class="button">משחקי מדעים</a>
+                <a href="infancy.html" class="button">זמן לקטנטנים</a>
+                <a href="jewish.html" class="button">משחקי יהדות</a>
+            </nav>
+            <br><br><br>
+            <nav id="headlineMind" class="headline">
+                <ul>
+                    <li><h1><strong>משחקי</strong></h1></li>
+                    <li><a href="proMT2.html"><figure><img class="logo" src="pictcher/logo.jpg"></figure></a></li>
+                    <li><h1><strong>חשיבה</strong></h1></li>
+                </ul>
+            </nav>
+        </header>
+            <br><br>
+    
+
+        
+        <div id="gamesMind">
+            <ul id="games">
+                <li id="math">
+                    <a href="math.html"><figure><img src="pictcher/g4.jpg"/></figure>חשבון</a>
+                </li>
+                <li id="xxx">
+                    <a href="https://www.sudoku.name/index-hb.php"><figure><img src="pictcher\suduku.jpg"></figure>סודוקו</a>
+                </li>
+                <li id="set">
+                    <a href="set.html"><figure><img src="pictcher/set.jpg"/></figure>סט</a>
+                </li>
+
+            </ul>
+            <ul id="games">
+                <li id="chess">
+                    <a target="_blank" href="https://www.chess.com/he/play"><figure><img src="pictcher/chess.jpg"/></figure>שחמט</a>
+                </li>
+                <li id="maxit">
+                    <a target="_blank" href="https://www.myabandonware.com/game/maxit-10/play-10"><figure><img src="pictcher/maxit.jpg"/></figure>מקס-איט</a>
+                </li>
+                <li id="set">
+                    <a target="_blank" href="https://minesweeper.online/"><figure><img src="pictcher/minesweeper.jpg"/></figure>שולה מוקשים</a>
+                </li>
+
+            </ul>
+            
+
+        </div>
+
+        <script src="header.js"></script>
+
+    </body>
+
+
+</html>

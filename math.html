@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrom=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #a,#b,#c{
+                cursor: pointer;
+                border-color: rgb(89, 216, 236);
+                border-width: 20px;
+                border-radius: 20px;
+                font-family: sans-serif;
+                font-size: 50px;
+                padding: 30px 30px;
+                margin: 60px;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            ol{
+                font-size: xx-large;
+                color:rgb(12, 12, 12);
+            }
+            #exe1,#exe2,#exe3{
+                color:rgb(30, 108, 210);
+                font-family: 'Trebuchet MS';
+                font: optional;
+                font-size: xx-large;
+            }
+            header{
+                font-size: xx-large;
+                color:rgb(30, 174, 218);
+                font-weight:bold;
+                font-family: Verdana;
+                text-align: center;
+
+            }
+            #points1,#points2,#poits3{
+                color: blueviolet;
+                font-size: medium;
+            }
+            #que1,#que2,#que3{
+                color:rgb(202, 24, 160);
+                font-size: xx-large;
+            }
+            .hide{
+                display: none;
+            }
+            .Well-done1{
+                width: 200px;
+                height: 200px;
+                margin-right:auto;
+                float: left;
+                position:relative;
+                bottom:  90px;
+                margin: 30px auto;
+                display:flex;
+                z-index: 20;
+                position: relative;
+                animation: mymove 25s infinite;
+                animation-iteration-count: infinite; 
+            }
+            .logo {
+                display:inline-block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                box-shadow: #000000;
+                border-color: rgb(69, 69, 70);
+                border-width: 10px;
+                border-style: groove;
+                transition-timing-function: linear;
+                transition-duration: 0.4s;
+                height: 100px;
+                width: 100px;
+
+                }
+                .logo:hover {
+                width: 200px;
+                height: 200px;
+            }
+            .cklap{animation-timing-function:ease-in-out;}
+            @keyframes mymove {
+                from {left: 0px;}
+                to {right: 1400px;}
+            }
+
+            .unorder-list{
+                margin-right: 250px;
+                
+            }
+            
+            body {
+            direction: rtl;
+            position: static;
+            background-image: url("pictcher/v45.jpg") ;
+            overflow: scroll;
+            width:auto ;
+            max-width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            }
+            @media (max-width:900px){
+                ul{
+                    display:list-item;
+                }
+                #a,#b,#c{
+                border-width: 10px;
+                border-radius: 10px;
+                font-family: sans-serif;
+                font-size: 30px;
+                padding: 20px 20px;
+                margin: 50px;
+            }
+            }
+            
+             
+
+        </style>
+       
+        <title>math games</title>
+    </head>
+
+    <body>
+        <a href="proMT2.html"><figure><img class="logo" src="pictcher/logo.jpg"></figure></a>
+        <br>
+        <header>אנא בחרו את הרמה שלכם והתחילו להתחרות</header>
+        <main>
+            <ul class="unorder-list">
+                <li><a data-a="easyPart" id="easy" href="easy.html" class="e"><input id="a" type="submit" value=" קל "></a></li>
+                <li><a data-a="medPart" id="medium" href="med.html" class="m"><input id="b" type="submit" value="בינוני"></a></li>
+                <li><a data-a="hardPart" id="hard" href="hard.html" class="h"><input id="c"type="submit" value="קשה"></a></li>
+            </ul>
+
+
+    <!--
+            <div class="hide" id="easyPart">
+                <p id="que1"></p>
+                <p id="answer1">
+                    <input id="test1" type="number" placeholder="הקלד את תשובתך" required/> 
+                    <input id="go1" type="submit" value="קדימה">
+                </p>
+                <p id="points1"></p>
+                <p id="good1">
+                    <div id="WellDone1" class="hide">
+                        <img class="cklap" src="pictcher\giphy.gif" />
+                      </div>
+                </p>
+                <input class="hide" id="next-game1" type="submit" value="למשחק הבא!">
+            </div>
+            <div class="hide" id="medPart">
+                <p id="que2"></p>
+                <p id="answer2">
+                    <input id="test2" type="number" placeholder="הקלד את תשובתך" required> 
+                    <input id="go2" type="submit" value="קדימה">
+                </p>
+                <p id="points2"></p>
+                <p id="good2">
+                    <div id="WellDone2" class="hide">
+                        <img class="cklap" src="pictcher\claph1.gif" />
+                      </div>
+                </p>
+            </div>
+            <div class="hide" id="hardPart">
+                <p id="que3"></p>
+                <p id="answer3">
+                    <input id="test3" type="number" placeholder="הקלד את תשובתך" required> 
+                    <input id="go3" type="submit" value="קדימה">
+                </p>
+                <p id="points3"></p>
+                <p id="good3">
+                    <div id="WellDone3" class="hide">
+                        <img class="cklap" src="pictcher\giphy2.gif" />
+                      </div>
+                </p>
+            </div>
+
+        </main>
+        <script src="app.js"></script>-->
+              
+     
+    </body>
+</html>
+

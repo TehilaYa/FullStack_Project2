@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- עמוד כניסת משתמש קיים- מכיל טופס "פורם" להכנסת פרטים-->
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="header_style.css">
+</head>
+
+<body onload="logIn()">
+    <header>
+        <p id="user"></p>
+
+        <nav id="navigation_login">
+            <a id="logIn1" href="login.html" class="button_login">כניסת משתמשים</a>
+            <a id="logIn2" href="joining.html" class="button_login">להצטרפות</a>
+            <a id="logOut" onclick="logOut()" href="proMT2.html" class="hide">התנתק</a>
+        </nav>
+
+        <nav id="navigation">
+            <a href="mind.html" class="button">משחקי חשיבה</a>
+            <a href=# class="button">משחקי מדעים</a>
+            <a href="proMT2.html"><img class="logo" src="pictcher/logo.jpg"></a>
+            <a href="infancy.html" class="button">זמן לקטנטנים</a>
+            <a href="jewish.html" class="button">משחקי יהדות</a>
+        </nav>
+    </header>
+
+    <div class="Contact-Us">
+        <h1>כניסת משתמש</h1>
+
+        <form class="contact" name="myForm" action="proMT2.html" onsubmit="return check()" method="post" autocomplete="on">
+
+            <input id="name" type="text" name="fname" placeholder="שם משתמש" required>
+            <br />
+
+            <input id="password" type="password" name="password" placeholder="סיסמא" required>
+            <br />
+
+            <button id="submit" type="submit">התחבר</button>
+            <br />
+            <a href="joining.html">אין לי חשבון,אני רוצה להירשם</a>
+
+        </form>
+        <!---p id="p_pass">ttttt</p-->
+
+    </div>
+
+    <script src="header.js"></script>
+    <script src="login.js"></script>
+</body>

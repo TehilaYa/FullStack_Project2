@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrom=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleSET.css">
+        
+        <style>
+            @media (max-width:900px){
+                .Set{
+                    display: list-item;
+                    margin-right: 20px;
+                }
+                #myContainer{
+                    margin-bottom: 50px;
+                    
+                }
+                .headline1{
+                    font-size: 40px;
+                    margin-right: 50px;
+                }
+                .headline2{
+                    visibility: hidden;
+
+                }
+                header{
+                    display: list-item;
+                }
+             
+
+
+
+                /*
+                    .the-game{
+                        margin-right: 0px;
+                    }
+                    
+                    img{
+                    width: 80px;
+                    height: 50px;
+                    border-style:groove;
+                    border-color: purple;
+                    }
+                    #empty-frame{
+                    width: 200px;
+                    height: 40px;
+                    margin-right: auto;
+
+                    }
+                    #shape8,#shape9,#shape10,#shape12,#shape22,#shape34,#shape40,#shape46,#shape48,#shape69,#shape71,#shape75{
+                    width: 50px;
+                    height: 30px;
+                    padding:6px 6px 6px 6px;
+                    border:10px;
+                    }
+                    #im10,#im34,#m48,#im75
+                    {
+                    margin-left: auto;
+                    }
+
+                    .find-sets{
+                    display: flex;
+                    margin-top: 100px;
+                    margin-right: 250px;
+                    }
+                    body {
+                    background-image: url("pictcher/v9.jpg") ;
+                    font-family:'Gill Sans';
+                    overflow: scroll;
+                    width:auto ;
+                    max-width: 100%;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                p{
+                    font-size:large;
+                    font-family:'Gill Sans MT';
+                    color: black;
+                    margin: 10px 70px 10px 10px;
+                    text-align: center;
+                }
+                .Set{
+                    margin-right: 50px;
+                }
+                #found1{
+                     display: none;
+                }
+                #found2{
+                    display: inline;
+                    
+                } */
+                                        
+            }
+        </style>
+
+        <title>SET</title>
+    </head>
+    <body>
+        
+        <header>
+            <div>
+                <a href="proMT2.html"><figure><img class="logo" src="pictcher/logo.jpg"></figure></a>
+            </div>
+            
+            <div class="headline1"><br>האם תצליחו לגלות את כל הסטים?</div>
+                
+            <div class="headline2" id="found1"><br>רשימת הסטים שמצאתם:</div>
+    
+    
+        </header><br>
+        
+        <p id="win"></p>
+        
+        <div class="Set">
+            <div id="myContainer">
+                <box id="big-box">
+                    <div id="line">
+                        <img id="im8" src= "set\8.png"/>
+                        <img id="im9" src="set\9.png"/>
+                        <img id="im10" src="set\10.png"/>
+                    </div>
+                    <div id="line">
+                        <img id="im12" src= "set\12.png"/>
+                        <img id="im22" src="set\22.png"/>
+                        <img id="im34" src="set\34.png"/>
+                    </div>
+                    <div id="line">
+                        <img id="im40" src= "set\40.png"/>
+                        <img id="im46" src="set\46.png"/>
+                        <img id="im48" src="set\48.png"/>
+                    </div>
+                    <div id="line">
+                        <img id="im69" src= "set\69.png"/>
+                        <img id="im71" src="set\71.png"/>
+                        <img id="im75" src="set\75.png"/>
+                    </div>
+
+                </box><!--big-box-->
+                
+
+            </div><!--my-container-->
+            <!--<div>
+                <button onclick="myMove()">Click Me</button>
+            </div>-->
+
+            <div id="myContainer">
+                <div class="firstSet" id="frame1">
+                    <img id="shape34" src= "set\34.png"/>
+                    <img id="shape40" src="set\40.png"/>
+                    <img id="shape46" src="set\46.png"/>
+                </div>    
+                <div class="secondSet" id="frame2">
+                    <img id="shape40" src="set\40.png"/>
+                    <img id="shape75" src="set\75.png"/>
+                    <img id="shape8" src="set\8.png"/>
+                </div>
+                <div class="thirdSet" id="frame3">
+                    <img id="shape71" src= "set\71.png"/>
+                    <img id="shape40" src="set\40.png"/>
+                    <img id="shape12" src="set\12.png"/>
+                </div>
+                <div class="fourthSet" id="frame4">
+                    <img id="shape22" src="set\22.png"/>
+                    <img id="shape8" src="set\8.png"/>
+                    <img id="shape12" src="set\12.png"/>
+                </div>
+                <div class="fiveSet" id="frame5">
+                    <img id="shape69" src="set\69.png"/>
+                    <img id="shape48" src="set\48.png"/>
+                    <img id="shape9" src="set\9.png"/>
+                </div>
+                <div class="sixthtSet" id="frame6">
+                    <img id="shape69" src="set\69.png"/>
+                    <img id="shape46" src="set\46.png"/>
+                    <img id="shape8" src="set\8.png"/>
+                </div>
+                      
+            </div>        
+            
+
+                    
+                </box>        
+        </div><!--SET-->
+    </div><!--find-sets-->
+    
+    
+
+        <script src="Set.js"></script>
+    </body>
+</html>
+<!--
+<div class="find-sets">
+                
+    <box id="little-box">
+        <div class="firstSet" id="frame1">
+            <img id="shape34" src= "set\34.png"/>
+            <img id="shape40" src="set\40.png"/>
+            <img id="shape46" src="set\46.png"/>
+        </div>
+        -->

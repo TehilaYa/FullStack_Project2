@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- עמוד כניסת משתמש חדש. מכיל טופס "פורם" להכנסת פרטים-->
+
+<head>
+    <link rel="stylesheet" href="joining.css">
+    <link rel="stylesheet" href="header_style.css">
+</head>
+
+<body onload="logIn()">
+    <header>
+        <p id="user"></p>
+
+        <nav id="navigation_login">
+            <a id="logIn1" href="login.html" class="button_login">כניסת משתמשים</a>
+            <a id="logIn2" href="joining.html" class="button_login">להצטרפות</a>
+            <a id="logOut" onclick="logOut()" href="proMT2.html" class="hide">התנתק</a>
+        </nav>
+
+        <nav id="navigation">
+            <a href="mind.html" class="button">משחקי חשיבה</a>
+            <a href=# class="button">משחקי מדעים</a>
+            <a href="proMT2.html"><img class="logo" src="pictcher/logo.jpg"></a>
+            <a href="infancy.html" class="button">זמן לקטנטנים</a>
+            <a href="jewish.html" class="button">משחקי יהדות</a>
+        </nav>
+    </header>
+
+    <div class="Contact-Us">
+        <h1>משתמש חדש</h1>
+
+        <form class="Contact" name="myForm" method="post" action="proMT2.html" onsubmit="return myFunction();" autocomplete="on">
+
+            <input id="name" type="text" name="fname" placeholder="שם מלא" required>
+            <br />
+
+            <input id="password1" type="password" name="password1" placeholder="סיסמא" required>
+            <br />
+            <input id="password2" type="password" name="password2" placeholder="אימות סיסמא" required>
+            <br />
+
+            <button id="submit" type="submit" >הרשמה</button>
+            <br />
+
+            <a href="login.html">יש לי חשבון,אני רוצה להתחבר</a>
+        </form>
+    </div>
+
+    <script src="header.js"></script>
+    <script src="joining.js"></script>
+
+</body>

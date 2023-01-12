@@ -1,0 +1,202 @@
+body {
+  direction: rtl;
+  position: static;
+  background-image: url("pictcher/v40.jpg") ;
+  overflow: scroll;
+  width:auto ;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu{
+  margin: 10px auto;
+  display:flex;
+  width: 100%;   
+  border-radius:10px;
+  margin-right: 200px;
+  margin-top: 150px;
+}
+
+.game{
+  border: 4px solid purple;
+  padding: 10px 10px 10px 10px;
+  border-radius:10px;
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(250, 251, 252);
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+}
+   
+p{
+  font-size: 27px;
+  position: relative;
+  right: 35px;
+  
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  border-style:groove;
+  border-radius: 20%;
+  border:#0a759c;
+  border-width: 10px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.hide {
+  visibility: hidden;
+}
+ul{
+  display: flex;
+  text-align: center;
+}
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  box-shadow: #000000;
+  border-color: rgb(217, 203, 229);
+  border-width: 10px;
+  border-style: groove;
+  transition-timing-function: linear;
+  transition-duration: 0.4s;
+
+}
+
+.logo:hover {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+header {
+  position: relative;
+  font-size: 60px;
+  color:rgb(196, 80, 184);
+}
+h1{
+  text-align: center;
+  font-family:Verdana;
+}
+
+#navigation_login {
+  z-index: 2;
+  position: relative;
+  float: left;
+  height: auto;
+  margin-top: 0px;
+
+  
+}
+#headline{
+  margin-right: 350px;
+
+}
+
+
+
+header .button_login {
+  width: 90px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 8px;
+  color: rgb(193, 226, 226);
+  background-color: rgb(97, 204, 236);
+  text-decoration: none;
+  display: block;
+  border: solid 2px rgb(193, 226, 226);
+  height: 20px;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+}
+
+.button_logOut {
+  width: 200px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 8px;
+  color: rgb(193, 226, 226);
+  background-color: rgb(97, 204, 236);
+  text-decoration: none;
+  border: solid 2px rgb(193, 226, 226);
+  height: 20px;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+  margin-top: 50px;
+}
+
+header .button_login:hover,
+.button_logOut:hover {
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 13.5px;
+  color: #000000;
+  background-color: rgb(97, 204, 236);
+  width: 92px;
+}
+
+#navigation {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+header .button {
+  flex: 1;
+  float: right;
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  color: rgb(193, 226, 226);
+  background-color: #0b9774;
+  text-decoration: none;
+  display: block;
+  border: solid 2px rgb(193, 226, 226);
+  height: 20px;
+  margin: auto;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+}
+
+header .button:hover {
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 17.5px;
+  color: #000000;
+  width: 150px;
+}
+
+header #user {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 0;
+  float: right;
+}
+
+
+@media (max-width:900px){
+               
+
+  #gamesMind{
+      float: right;
+
+  }
+ 
+ 
+}
