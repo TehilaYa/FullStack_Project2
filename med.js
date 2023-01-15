@@ -1,5 +1,6 @@
 let medExercises = [['50', "5X10 = "], ['45',  "9X5 ="], ['20', "200/10 = "], ['5', "50/10 ="], ['9', "3X3 ="], ['26', "13 + 13 ="],['700', "70X10 = "],['45', "56-11 = "],['38', "45-7"],['99', " 9X11 = "]];
 var yourPoints = 0;
+localStorage.setItem('PlayerPoints-med', yourPoints);
 var theQue;
 var TRY;
 var check;
@@ -48,6 +49,7 @@ function something(){
     var ans = parseFloat(TRY.value);
     if(ans === parseFloat(medExercises[j][0])){
         yourPoints+=10;
+        localStorage.setItem('PlayerPoints-med', yourPoints);
         sum.innerHTML = "כל הכבוד! " + yourPoints + " נקודות:)";
         j++;
         if(j>=medExercises.length){

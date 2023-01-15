@@ -1,5 +1,6 @@
 let easyExercises = [['10', "= 5 + 5 " ], ['4', " = 9-5 "], ['6', "1 + 2 + 3"],['18', "10 + 8 ="],['40', "20+20="], ['10', "20-10="], ['14', "7 + 7 = "], ['6', "16-10="], ['43', "40 + 3"], ['90', "70 + 20"]];
 var yourPoints = 0;
+localStorage.setItem('PlayerPoints-easy', yourPoints);
 var theQue;
 var TRY;
 var check;
@@ -48,6 +49,7 @@ function something(){
     var ans = parseFloat(TRY.value);
     if(ans === parseFloat(easyExercises[j][0])){
         yourPoints+=10;
+        localStorage.setItem('PlayerPoints-easy', yourPoints);
         sum.innerHTML = "כל הכבוד! " + yourPoints + " נקודות:)";
         j++;
         if(j>=easyExercises.length){
@@ -83,6 +85,7 @@ function something(){
                     next.className="next-game";
                     j=0;
                     yourPoints=0;
+
                 }
             }
             else {

@@ -1,5 +1,6 @@
 let hardExercises = [['130', "40 + 90 = "], ['6', "12 : 72 = "],['121',"88 + 33 ="],["275"," 5X55 = "],['6'," 33-27= "],['163',"86 + 77"],['42'," 60-18= "],['64'," 16X4 = "],['2',"60 : 120 = "],['2', " 21-19= "]];
 var yourPoints = 0;
+localStorage.setItem('PlayerPoints-hard', yourPoints);
 var theQue;
 var TRY;
 var check;
@@ -50,6 +51,7 @@ function something(){
     var ans = parseFloat(TRY.value);
     if(ans === parseFloat(hardExercises[j][0])){
         yourPoints+=10;
+        localStorage.setItem('PlayerPoints-hard', yourPoints);
         sum.innerHTML = "כל הכבוד! " + yourPoints + " נקודות:)";
         j++;
         if(j>=hardExercises.length){
